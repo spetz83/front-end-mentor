@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  gap: 30px;
+}
+
+.qrcode {
+  border-radius: 20px;
+}
+
+.heading {
+  text-align: center;
+  color: #262e4b;
+}
+
+.description {
+  text-align: center;
+  color: #6f7385;
+  font-size: 23px;
+}
