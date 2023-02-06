@@ -1,0 +1,96 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1200px;
+  max-width: 1200px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  gap: 30px;
+  color: black;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.countContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pill {
+  text-align: center;
+  background-color: #1e3075;
+  color: #fff;
+  font-size: larger;
+  border-radius: 5px;
+  padding: 5px 12px 5px 12px;
+}
+
+.notificationBtn {
+  border: 0;
+  background-color: white;
+  color: #afb1b9;
+  font-weight: 600;
+  font-size: large;
+}
+
+.notificationBtn:hover {
+  color: #8e8f94;
+}
+
+.notificationContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.notification {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+}
+
+.notification:hover {
+  background-color: #f7fafd;
+  border-radius: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.details p {
+  color: #8b8e97;
+}
+
+.details span {
+  color: #1d1f27;
+  font-weight: bold;
+}
+
+.details .timestamp {
+  color: #c7cad5;
+}
+
+.details .dot {
+  border-radius: 50%;
+  background-color: #ea665c;
+  width: 9px;
+  height: 9px;
+}
+
+.details .preview {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
