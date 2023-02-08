@@ -46,13 +46,13 @@ export default function Notification() {
       id: 4,
       avatarSrc: "/images/notifications/avatar-rizky-hasanuddin.webp",
       name: "Rizky Hasanuddin",
-      message: "reacted to your recent post",
-      title: "My first tournament today!",
+      message: "sent you a private message",
+      title: "",
       pm: "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
       pictureSrc: null,
       unread: false,
-      type: "reaction",
-      timestamp: "1m ago",
+      type: "pm",
+      timestamp: "5 days ago",
     },
     {
       id: 5,
@@ -140,6 +140,10 @@ export default function Notification() {
         </div>
         <div className={styles.notificationContainer}>
           {notifications.map(notification => {
+            const titleClass =
+              notification.type === "group"
+                ? `${styles.title} ${styles.blueTxt}`
+                : styles.title;
             return (
               <div
                 key={notification.id}
@@ -156,18 +160,39 @@ export default function Notification() {
                 />
                 <div className={styles.details}>
                   <div className={styles.preview}>
-                    <p>
-                      <span className={styles.username}>
-                        {`${notification.name} `}
+                    <div className={styles.previewHeadContainer}>
+                      <div className={styles.previewHeader}>
+                        <p>
+                          <span className={styles.username}>
+                            {`${notification.name} `}
+                          </span>
+                          {`${notification.message} `}
+                          <span className={titleClass}>
+                            {notification.title}
+                          </span>
+                        </p>
+                        {notification.unread && <div className={styles.dot} />}
+                      </div>
+                      <span className={styles.timestamp}>
+                        {notification.timestamp}
                       </span>
-                      {`${notification.message} `}
-                      <span className={styles.title}>{notification.title}</span>
-                    </p>
-                    {notification.unread && <div className={styles.dot} />}
+                    </div>
+
+                    {notification.pictureSrc && (
+                      <Image
+                        src={notification.pictureSrc}
+                        width={50}
+                        height={50}
+                        alt="notification picture"
+                      />
+                    )}
                   </div>
-                  <span className={styles.timestamp}>
-                    {notification.timestamp}
-                  </span>
+
+                  {notification.pm && (
+                    <div className={styles.pm}>
+                      <p>{notification.pm}</p>
+                    </div>
+                  )}
                 </div>
               </div>
             );
