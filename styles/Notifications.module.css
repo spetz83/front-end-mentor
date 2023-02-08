@@ -130,3 +130,28 @@
   font-size: large;
   color: #86888d;
 }
+
+@media (max-width: 750px) {
+  .card {
+    min-width: 412px;
+    border-radius: 0;
+    padding: 15px;
+  }
+
+  .countContainer {
+    gap: 10px !important;
+  }
+
+  .countContainer h1 {
+    font-size: 1.2em;
+  }
+
+  .pill {
+    font-size: 1.2em;
+    padding: 3px 8px 3px 8px;
+  }
+
+  .notificationBtn {
+    font-size: 1em;
+  }
+}

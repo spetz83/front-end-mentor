@@ -144,6 +144,7 @@ export default function Notification() {
               notification.type === "group"
                 ? `${styles.title} ${styles.blueTxt}`
                 : styles.title;
+
             return (
               <div
                 key={notification.id}
