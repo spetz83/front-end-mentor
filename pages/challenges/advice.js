@@ -15,9 +15,11 @@ export default function Advice() {
     <Layout>
       <div className={styles.card}>
         <h1 className={styles.title}>
-          Advice #{data.slip ? data.slip.id : ""}
+          Advice #{data && data.slip ? data.slip.id : ""}
         </h1>
-        <p className={styles.advice}>{data.slip ? data.slip.advice : ""}</p>
+        <p className={styles.advice}>
+          {data && data.slip ? data.slip.advice : ""}
+        </p>
         <div className={styles.divider} />
         <div className={styles.btnContainer} onClick={getNewAdvice}>
           <div className={styles.diceBtn}>

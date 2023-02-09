@@ -9,6 +9,7 @@
   border-radius: 10px;
   gap: 35px;
   color: white;
+  position: relative;
 }
 
 .title {
@@ -32,7 +33,7 @@
 
 .btnContainer {
   position: absolute;
-  top: 370px;
+  bottom: -30px;
 }
 
 .diceBtn {
