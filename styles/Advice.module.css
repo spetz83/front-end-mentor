@@ -1,0 +1,74 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 540px;
+  max-width: 540px;
+  background-color: hsl(217, 19%, 24%);
+  padding: 40px 30px 60px 30px;
+  border-radius: 10px;
+  gap: 35px;
+  color: white;
+}
+
+.title {
+  color: hsl(150, 100%, 66%);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.advice {
+  font-size: 28px;
+  text-align: center;
+}
+
+.divider {
+  background-image: url("/images/advice/pattern-divider-desktop.svg");
+  background-repeat: no-repeat;
+  width: 444px;
+  height: 16px;
+}
+
+.btnContainer {
+  position: absolute;
+  top: 370px;
+}
+
+.diceBtn {
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diceBtn:hover {
+  box-shadow: 0 0 20px 5px hsl(150, 100%, 66%);
+  cursor: pointer;
+}
+
+.diceIcon {
+  background-image: url("/images/advice/icon-dice.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 750px) {
+  .card {
+    min-width: 375px;
+    max-width: 375px;
+  }
+
+  .divider {
+    background-image: url("/images/advice/pattern-divider-mobile.svg");
+    width: 295px;
+  }
+
+  .btnContainer {
+    top: 400px;
+  }
+}

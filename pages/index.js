@@ -27,19 +27,14 @@ export default function Home() {
           <p className={inter.className}>Responsive Notifications Page</p>
         </Link>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="/challenges/advice" className={styles.card}>
           <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
+            Advice App <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
+            A random advice generator using the Advice Slip API.
           </p>
-        </a>
+        </Link>
 
         <a
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
