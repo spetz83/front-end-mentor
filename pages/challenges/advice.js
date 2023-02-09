@@ -8,8 +8,8 @@ export default function Advice() {
       <div className={styles.card}>
         <h1 className={styles.title}>Advice #117</h1>
         <p className={styles.advice}>
-          "It is easy to sit up and take notice, what's difficult is getting up
-          and taking action."
+          &ldquo;It is easy to sit up and take notice, what&apos;s difficult is
+          getting up and taking action.&rdquo;
         </p>
         <div className={styles.divider} />
         <div className={styles.btnContainer}>
