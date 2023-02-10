@@ -36,20 +36,14 @@ export default function Home() {
           </p>
         </Link>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="/challenges/calculator" className={styles.card}>
           <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
+            Calculator App<span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL
-            with&nbsp;Vercel.
+            Calculator... 3 Themes... Nuff Said.
           </p>
-        </a>
+        </Link>
       </div>
     </Layout>
   );
